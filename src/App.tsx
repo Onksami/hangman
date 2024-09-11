@@ -63,6 +63,10 @@ function App() {
     };
   }, []);
 
+  const refreshPage = () => {
+    window.location.reload();
+  };
+
   return (
     <div
       style={{
@@ -94,7 +98,7 @@ function App() {
           addGuessedLetter={addGuessedLetter}
         />
       </div>
-      <button> Refresh the page</button>
+      <button onClick={refreshPage}>Refresh the page</button>
     </div>
   );
 }
